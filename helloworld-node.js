@@ -25,8 +25,7 @@ const logProgress = msg => {
 //Main Script
 const greeting = () => {
     logProgress("Starting the Greetings function");
-    execSync(`echo \"Hello World\" ${name}`,
-        { stdio: 'inherit', stderr: 'inherit' });
+    console.log(`Hello World ${name}`);
     logProgress("Cleaning up");
 }
 
